@@ -1,8 +1,8 @@
 
-const btnMinus = document.getElementById('btn-minus');
-const btnPlus = document.getElementById('btn-plus');
-const quantityValue = document.getElementById('quantity-value');
-const totalPriceDisplay = document.getElementById('total-price');
+const btnMinus = document.getElementById("btn-minus");
+const btnPlus = document.getElementById("btn-plus");
+const quantityValue = document.getElementById("quantity-value");
+const totalPriceDisplay = document.getElementById("total-price");
 
 
 const BASE_PRICE = 260; 
@@ -15,13 +15,13 @@ function updateCalculations() {
 }
 
 
-btnPlus.addEventListener('click', () => {
+btnPlus.addEventListener("click", () => {
   currentQuantity++;
   updateCalculations();
 });
 
 
-btnMinus.addEventListener('click', () => {
+btnMinus.addEventListener("click", () => {
   if (currentQuantity > 1) {
     currentQuantity--;
     updateCalculations();
